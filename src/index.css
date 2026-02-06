@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-blue-dark: #0A607E;
+  --primary-blue-light: #2B8AAF;
+  --teal-blue: #2186AB;
+  --warning-green: #A9CF73;
+  --warning-green-dark: #8AB860;
+  --dark-blue: #1A3A5C;
+  --primary-bg: #0D4A63;
+  --white: #FFFFFF;
+  --grey-100: #F5F7FA;
+  --grey-500: #9CA3AF;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #1A3A5C;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+}
