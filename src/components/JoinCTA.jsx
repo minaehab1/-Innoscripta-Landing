@@ -127,7 +127,7 @@ const JoinCTA = () => {
                     </div>
 
                     {/* Feature Cards */}
-                    <div className="flex flex-col gap-4 h-full" style={{ aspectRatio: '16/9' }}>
+                    <div className="flex flex-col gap-4">
                         {features.map((feature, index) => (
                             <div
                                 key={index}
