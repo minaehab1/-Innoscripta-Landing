@@ -32,7 +32,7 @@ export default {
             },
             animation: {
                 fadeIn: 'fadeIn 0.5s ease-in-out',
-                'infinite-scroll': 'infinite-scroll 40s linear infinite',
+                'infinite-scroll': 'infinite-scroll 80s linear infinite',
             },
             keyframes: {
                 fadeIn: {

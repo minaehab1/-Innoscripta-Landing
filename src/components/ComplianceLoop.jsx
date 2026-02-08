@@ -35,7 +35,7 @@ const ComplianceLoop = () => {
     ];
 
     return (
-        <section className="py-24 px-6 max-w-5xl mx-auto">
+        <section className="py-24 px-6 max-w-7xl mx-auto">
             <div className="text-center mb-20 space-y-6">
                 <h2 className="text-4xl md:text-5xl font-bold font-raleway text-white">
                     The Compliance Loop That Changes Everything
@@ -45,49 +45,45 @@ const ComplianceLoop = () => {
                 </p>
             </div>
 
-            <div className="relative">
-                {/* Vertical Line */}
-                <div className="absolute left-[20px] md:left-1/2 top-4 bottom-4 w-0.5 bg-gradient-to-b from-[#94BA5D] via-white/20 to-transparent -translate-x-1/2"></div>
+            <div className="grid md:grid-cols-3 gap-8">
+                {steps.map((step, index) => (
+                    <div key={index} className="relative group">
+                        {/* Notification Bubble - Top Left */}
+                        <div className="absolute -top-4 -left-4 w-10 h-10 rounded-full bg-[#0B2433] border-2 border-[#94BA5D] flex items-center justify-center z-20 shadow-[0_0_15px_rgba(148,186,93,0.4)] transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-[0_0_25px_rgba(148,186,93,0.6)]">
+                            <span className="text-white font-bold">{step.number}</span>
+                        </div>
 
-                <div className="space-y-16">
-                    {steps.map((step, index) => (
-                        <div key={index} className={`flex flex-col md:flex-row gap-8 md:gap-16 items-start relative ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
+                        {/* Card Content */}
+                        <div className="h-full p-6 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-[#94BA5D]/30">
+                            <div className="flex flex-row items-start gap-6">
+                                {/* Icon */}
+                                <div className="w-12 h-12 rounded-lg bg-[#94BA5D]/20 flex items-center justify-center text-[#94BA5D] shrink-0">
+                                    {step.icon}
+                                </div>
 
-                            {/* Number Bubble */}
-                            <div className="absolute left-[20px] md:left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-[#0B2433] border-2 border-[#94BA5D] flex items-center justify-center z-10 shadow-[0_0_20px_rgba(148,186,93,0.3)]">
-                                <span className="text-white font-bold">{step.number}</span>
-                            </div>
-
-                            {/* Content Side */}
-                            <div className="flex-1 pl-16 md:pl-0 md:text-right pr-0 md:pr-12">
-                                <div className={`p-6 bg-white/5 border border-white/10 rounded-xl backdrop-blur-sm transition-transform hover:-translate-y-1 duration-300 ${index % 2 !== 0 ? 'md:text-left md:ml-12' : ''}`}>
-                                    <div className={`mb-4 inline-block p-3 rounded-lg bg-[#94BA5D]/20 text-[#94BA5D] ${index % 2 !== 0 ? '' : 'md:ml-auto'}`}>
-                                        {step.icon}
-                                    </div>
-                                    <h3 className="text-2xl font-bold text-white mb-3 font-montserrat tracking-tight">{step.title}</h3>
-                                    <p className="text-gray-400 leading-relaxed text-sm">{step.description}</p>
+                                {/* Text */}
+                                <div>
+                                    <h3 className="text-xl font-bold text-white mb-3 font-montserrat tracking-tight group-hover:text-[#94BA5D] transition-colors">{step.title}</h3>
+                                    <p className="text-gray-400 text-sm leading-relaxed">{step.description}</p>
                                 </div>
                             </div>
-
-                            {/* Empty spacer for opposite side */}
-                            <div className="flex-1 hidden md:block"></div>
                         </div>
-                    ))}
-                </div>
-
-                {/* Result Box */}
-                <div className="mt-20 relative z-10 bg-gradient-to-br from-[#0D4A63] to-[#0A384C] p-8 md:p-12 rounded-2xl border border-white/10 text-center shadow-2xl">
-                    <h3 className="text-2xl font-bold text-white mb-4 font-montserrat">The result?</h3>
-                    <p className="text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-                        IRS-ready documentation in 10 days, not 6 months. Up to <span className="font-bold text-[#94BA5D]">35%</span> more eligible costs captured. Hundreds of hours returned to innovation, not administration.
-                    </p>
-
-                    <div className="border-t border-white/10 pt-6">
-                        <p className="text-[#94BA5D] font-bold text-sm tracking-wide uppercase mb-2">This isn't theory</p>
-                        <p className="text-gray-400 text-sm">
-                            2,100+ European companies already use Clusterix. They stay an average 2.9 years with &lt;2% churn. Because continuous compliance actually works.
-                        </p>
                     </div>
+                ))}
+            </div>
+
+            {/* Result Box */}
+            <div className="mt-10 relative z-10 bg-gradient-to-br from-[#0D4A63] to-[#0A384C] p-6 md:p-8 rounded-2xl border border-white/10 text-center shadow-2xl">
+                <h3 className="text-2xl font-bold text-white mb-4 font-montserrat">The result?</h3>
+                <p className="text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
+                    IRS-ready documentation in 10 days, not 6 months. Up to <span className="font-bold text-[#94BA5D]">35%</span> more eligible costs captured. Hundreds of hours returned to innovation, not administration.
+                </p>
+
+                <div className="border-t border-white/10 pt-6">
+                    <p className="text-[#94BA5D] font-bold text-sm tracking-wide uppercase mb-2">This isn't theory</p>
+                    <p className="text-gray-400 text-sm">
+                        2,100+ European companies already use Clusterix. They stay an average 2.9 years with &lt;2% churn. Because continuous compliance actually works.
+                    </p>
                 </div>
             </div>
         </section>
