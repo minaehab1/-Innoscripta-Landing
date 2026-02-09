@@ -95,7 +95,8 @@ const Lander = () => {
 
             {/* Typeform Section */}
             <section className="py-20 px-6 bg-[#0B2433]">
-                <div id="apply-form" className="max-w-xl mx-auto bg-white rounded-xl overflow-hidden shadow-2xl h-[650px] md:h-[750px] scroll-mt-[30px]">
+                <div className="relative max-w-xl mx-auto bg-white rounded-xl overflow-hidden shadow-2xl h-[750px]">
+                    <div id="apply-form" className="absolute top-[50px] invisible"></div>
                     <div data-tf-live="01KGST86NXFXZBFR1PG48K1TG8" style={{ height: '100%', width: '100%' }}></div>
                 </div>
             </section>
