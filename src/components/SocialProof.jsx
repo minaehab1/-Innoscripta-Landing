@@ -16,7 +16,7 @@ const SocialProof = ({ cta }) => {
         <div className="flex flex-col items-center gap-4 w-full">
 
             {/* CTA and Scarcity Container - Synced Width */}
-            <div className="flex flex-col w-full max-w-sm gap-3 items-center">
+            <div className="flex flex-col w-full max-w-xs gap-3 items-center">
                 {cta && <div className="w-full shadow-2xl rounded-[6.25rem]">{cta}</div>}
 
                 {/* Trust Text */}
