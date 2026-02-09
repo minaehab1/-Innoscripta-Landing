@@ -94,9 +94,9 @@ const Lander = () => {
             <TrustBar theme="dark" />
 
             {/* Typeform Section */}
-            <section id="apply-form" className="py-20 px-6 bg-[#0B2433]">
-                <div className="max-w-xl mx-auto bg-white rounded-xl overflow-hidden shadow-2xl h-[750px]">
-                    <div data-tf-live="01KGST86NXFXZBFR1PG48K1TG8" style={{ height: '750px', width: '100%' }}></div>
+            <section className="py-20 px-6 bg-[#0B2433]">
+                <div id="apply-form" className="max-w-xl mx-auto bg-white rounded-xl overflow-hidden shadow-2xl h-[650px] md:h-[750px] scroll-mt-[30px]">
+                    <div data-tf-live="01KGST86NXFXZBFR1PG48K1TG8" style={{ height: '100%', width: '100%' }}></div>
                 </div>
             </section>
 
