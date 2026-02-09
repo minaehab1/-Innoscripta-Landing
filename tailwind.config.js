@@ -10,7 +10,7 @@ export default {
                 'primary-blue-dark': '#0A607E',
                 'primary-blue-light': '#2B8AAF',
                 'teal-blue': '#2186AB',
-                'warning-green': '#A9CF73',
+                'warning-green': '#94BA5D',
                 'warning-green-dark': '#8AB860',
                 'dark-blue': '#1A3A5C',
                 'primary-bg': '#0D4A63',
