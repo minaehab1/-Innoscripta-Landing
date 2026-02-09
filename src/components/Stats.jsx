@@ -16,7 +16,7 @@ const Stats = () => {
                         <div key={index} className="text-center group hover:-translate-y-2 transition-transform duration-300">
                             <p className="text-5xl font-bold text-warning-green mb-2">{stat.value}</p>
                             <p className="text-lg font-bold text-dark-blue mb-1">{stat.label}</p>
-                            <p className="text-sm text-gray-500 max-w-[200px] mx-auto">{stat.description}</p>
+                            <p className="text-sm text-white max-w-[200px] mx-auto">{stat.description}</p>
                         </div>
                     ))}
                 </div>

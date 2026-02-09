@@ -17,7 +17,7 @@ const IRSCompliance = () => {
                             The joy of complete IRS compliance starts here
                         </h2>
 
-                        <p className="text-xl text-gray-300 mb-8 font-semibold">
+                        <p className="text-xl text-white mb-8 font-semibold">
                             Automated and accurate R&D documentation
                         </p>
 
@@ -28,7 +28,7 @@ const IRSCompliance = () => {
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                                     </svg>
                                 </div>
-                                <p className="text-gray-300 text-lg">
+                                <p className="text-white text-lg">
                                     Capture up to 30 percent of qualified costs
                                 </p>
                             </div>
@@ -39,7 +39,7 @@ const IRSCompliance = () => {
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                                     </svg>
                                 </div>
-                                <p className="text-gray-300 text-lg">
+                                <p className="text-white text-lg">
                                     Every project stays compliant and audit ready
                                 </p>
                             </div>

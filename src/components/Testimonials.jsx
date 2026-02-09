@@ -44,7 +44,7 @@ const Testimonials = () => {
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-plus-jakarta">
                         What Our Customers Say
                     </h2>
-                    <p className="text-gray-300 max-w-3xl mx-auto text-lg">
+                    <p className="text-white max-w-3xl mx-auto text-lg">
                         Explore our success stories and see how we drive innovation, streamline operations, and help businesses achieve their goals with our cutting-edge solutions.
                     </p>
                 </div>
@@ -56,8 +56,8 @@ const Testimonials = () => {
                             key={index}
                             onClick={() => handleTabChange(index)}
                             className={`flex-1 py-4 px-6 rounded-full font-bold text-sm uppercase tracking-wider transition-all duration-300 ${activeTab === index
-                                    ? 'bg-[#4AB8CC] text-white shadow-lg'
-                                    : 'bg-white text-[#4AB8CC] hover:bg-gray-100'
+                                ? 'bg-[#4AB8CC] text-white shadow-lg'
+                                : 'bg-white text-[#4AB8CC] hover:bg-gray-100'
                                 }`}
                         >
                             {testimonial.company}
@@ -119,8 +119,8 @@ const Testimonials = () => {
                             </div>
                             <div className="border-t border-white/20 pt-6">
                                 <p className="font-bold text-lg">{currentTestimonial.name}</p>
-                                <p className="text-gray-300">{currentTestimonial.title}</p>
-                                <p className="text-gray-400 text-sm mt-1">{currentTestimonial.companyName}</p>
+                                <p className="text-white">{currentTestimonial.title}</p>
+                                <p className="text-white text-sm mt-1">{currentTestimonial.companyName}</p>
                             </div>
                         </div>
                     </div>

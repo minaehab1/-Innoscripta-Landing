@@ -11,7 +11,7 @@ const FeatureCard = ({ title, description, icon }) => {
                 )}
             </div>
             <h4 className="text-lg font-bold text-dark-blue mb-2 font-display">{title}</h4>
-            <p className="text-sm text-gray-600 leading-relaxed min-h-[3rem]">{description}</p>
+            <p className="text-sm text-white leading-relaxed min-h-[3rem]">{description}</p>
         </div>
     );
 };

@@ -12,13 +12,13 @@ const Footer = () => {
                             </svg>
                             <span className="font-bold text-lg font-sans">innoscripta</span>
                         </div>
-                        <p className="text-sm text-gray-300">
+                        <p className="text-sm text-white">
                             Software-driven R&D tax compliance.
                         </p>
                     </div>
                     <div>
                         <h4 className="font-bold mb-4">Company</h4>
-                        <ul className="space-y-2 text-sm text-gray-300">
+                        <ul className="space-y-2 text-sm text-white">
                             <li>About Us</li>
                             <li>Careers</li>
                             <li>Contact</li>
@@ -26,7 +26,7 @@ const Footer = () => {
                     </div>
                     <div>
                         <h4 className="font-bold mb-4">Resources</h4>
-                        <ul className="space-y-2 text-sm text-gray-300">
+                        <ul className="space-y-2 text-sm text-white">
                             <li>Blog</li>
                             <li>Case Studies</li>
                             <li>Help Center</li>
@@ -34,14 +34,14 @@ const Footer = () => {
                     </div>
                     <div>
                         <h4 className="font-bold mb-4">Legal</h4>
-                        <ul className="space-y-2 text-sm text-gray-300">
+                        <ul className="space-y-2 text-sm text-white">
                             <li>Privacy Policy</li>
                             <li>Terms of Service</li>
                             <li>Imprint</li>
                         </ul>
                     </div>
                 </div>
-                <div className="border-t border-white/10 mt-12 pt-8 text-center text-xs text-gray-400">
+                <div className="border-t border-white/10 mt-12 pt-8 text-center text-xs text-white">
                     © {new Date().getFullYear()} Innoscripta GmbH. All rights reserved.
                 </div>
             </div>

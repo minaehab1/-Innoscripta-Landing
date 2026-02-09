@@ -64,7 +64,7 @@ const ComplianceLoop = () => {
                                 {/* Text */}
                                 <div>
                                     <h3 className="text-xl font-bold text-white mb-3 font-montserrat tracking-tight group-hover:text-[#94BA5D] transition-colors">{step.title}</h3>
-                                    <p className="text-gray-400 text-sm leading-relaxed">{step.description}</p>
+                                    <p className="text-white text-sm leading-relaxed">{step.description}</p>
                                 </div>
                             </div>
                         </div>
@@ -81,7 +81,7 @@ const ComplianceLoop = () => {
 
                 <div className="border-t border-white/10 pt-6">
                     <p className="text-[#94BA5D] font-bold text-sm tracking-wide uppercase mb-2">This isn't theory</p>
-                    <p className="text-gray-400 text-sm">
+                    <p className="text-white text-sm">
                         2,100+ European companies already use Clusterix. They stay an average 2.9 years with &lt;2% churn. Because continuous compliance actually works.
                     </p>
                 </div>

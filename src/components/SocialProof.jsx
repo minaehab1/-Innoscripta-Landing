@@ -65,7 +65,7 @@ const SocialProof = ({ cta }) => {
             </div>
 
             {/* Trust Text */}
-            <p className="text-gray-400 text-xs font-mono font-medium tracking-wide">
+            <p className="text-white text-xs font-mono font-medium tracking-wide">
                 Trusted By <span className="font-bold text-white">2100+</span> Founders
             </p>
         </div>

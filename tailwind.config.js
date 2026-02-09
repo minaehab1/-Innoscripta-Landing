@@ -19,7 +19,7 @@ export default {
                 'grey-500': '#9CA3AF',
             },
             fontFamily: {
-                sans: ['Raleway', 'sans-serif'],
+                sans: ['Poppins', 'sans-serif'],
                 poppins: ['Poppins', 'sans-serif'],
                 geist: ['Space Mono', 'monospace'],
                 'geist-mono': ['Space Mono', 'monospace'],

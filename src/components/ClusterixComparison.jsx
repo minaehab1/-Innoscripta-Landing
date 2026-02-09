@@ -7,7 +7,7 @@ const ClusterixComparison = () => {
                 <h2 className="text-4xl md:text-5xl font-bold font-raleway text-white mb-6">
                     Where Clusterix Shines
                 </h2>
-                <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+                <p className="text-white max-w-2xl mx-auto text-lg">
                     See the difference between the traditional manual approach and our automated platform.
                 </p>
             </div>
@@ -30,7 +30,7 @@ const ClusterixComparison = () => {
                                 "Try to reconstruct everything",
                                 "Submit thin claim and Cross fingers",
                             ].map((item, i) => (
-                                <div key={i} className="flex items-start gap-3 text-gray-400">
+                                <div key={i} className="flex items-start gap-3 text-white">
                                     <svg className="w-5 h-5 text-red-500 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                                     </svg>
@@ -38,7 +38,7 @@ const ClusterixComparison = () => {
                                 </div>
                             ))}
 
-                            <div className="flex items-start gap-3 text-gray-400 border-t border-white/5 pt-4 mt-4">
+                            <div className="flex items-start gap-3 text-white border-t border-white/5 pt-4 mt-4">
                                 <svg className="w-5 h-5 text-red-500 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                                 </svg>
@@ -46,7 +46,7 @@ const ClusterixComparison = () => {
                             </div>
 
                             <div className="mt-8 bg-red-900/20 p-4 rounded-xl text-center border border-red-500/20">
-                                <p className="text-gray-400 text-sm mb-1">You charge $2,000 =</p>
+                                <p className="text-white text-sm mb-1">You charge $2,000 =</p>
                                 <p className="text-red-500 font-bold text-xl uppercase">$50/hour</p>
                             </div>
                         </div>
@@ -69,7 +69,7 @@ const ClusterixComparison = () => {
                                 { title: "NARRATIVE:", text: "R&D experts craft the precise technical story IRS needs." },
                                 { title: "DEFEND:", text: "We file and defend your claim, support included." },
                             ].map((item, i) => (
-                                <div key={i} className="flex items-start gap-3 text-gray-300">
+                                <div key={i} className="flex items-start gap-3 text-white">
                                     <svg className="w-5 h-5 text-[#94BA5D] mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                     </svg>

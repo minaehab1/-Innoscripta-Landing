@@ -95,7 +95,7 @@ const JoinCTA = () => {
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-plus-jakarta">
                         Join 2,100+ companies that scaled faster using our system
                     </h2>
-                    <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+                    <p className="text-lg text-white max-w-3xl mx-auto">
                         innoscripta brings all your R&D data, people, costs, and documentation together so you can file your R&D credits confidently, automatically, and without audit stress.
                     </p>
                 </div>
