@@ -36,12 +36,12 @@ const Lander = () => {
                     <div className="flex items-center gap-2 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                         <img src="/images/innoscripta-logo-white.a085a8e8.svg" alt="innoscripta" className="h-8 w-auto" />
                     </div>
-                    <Button variant="primary" onClick={scrollToForm} className="bg-warning-green !text-white text-[10px] px-3 py-1.5 uppercase font-bold tracking-wider hover:brightness-110 transition-all">GET STARTED</Button>
+                    <Button variant="primary" onClick={scrollToForm} className="bg-warning-green !text-white text-[9px] px-2 py-1 md:text-sm md:px-5 md:py-2.5 uppercase font-bold tracking-wider hover:brightness-110 transition-all">GET STARTED</Button>
                 </div>
             </nav>
 
             {/* Hero Section - Above the Fold Optimization */}
-            <section className="relative pt-24 pb-12 w-full text-center" style={{ backgroundImage: 'url(https://us.innoscripta.com/homepage/hero-bg.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <section className="relative pt-24 pb-12 w-full text-center" style={{ backgroundImage: 'url(/images/hero-bg.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 {/* Dark overlay for text readability */}
                 <div className="absolute inset-0 bg-[#0B2433]/40"></div>
                 <div className="relative z-10 px-6 max-w-5xl mx-auto">

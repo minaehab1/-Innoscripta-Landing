@@ -37,7 +37,7 @@ const LanderRolling = () => {
                     <div className="flex items-center gap-2 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                         <img src="/images/innoscripta-logo-white.a085a8e8.svg" alt="innoscripta" className="h-8 w-auto" />
                     </div>
-                    <Button variant="primary" onClick={scrollToForm} className="bg-warning-green !text-white text-[10px] px-3 py-1.5 uppercase font-bold tracking-wider hover:brightness-110 transition-all">GET STARTED</Button>
+                    <Button variant="primary" onClick={scrollToForm} className="bg-warning-green !text-white text-[9px] px-2 py-1 md:text-sm md:px-5 md:py-2.5 uppercase font-bold tracking-wider hover:brightness-110 transition-all">GET STARTED</Button>
                 </div>
             </nav>
 

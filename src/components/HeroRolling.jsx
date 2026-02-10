@@ -53,7 +53,7 @@ const HeroRolling = ({ scrollToForm }) => {
     }, [displayText, isDeleting, phraseIndex, dynamicPhrases]);
 
     return (
-        <section className="relative pt-24 pb-12 w-full text-center" style={{ backgroundImage: 'url(https://us.innoscripta.com/homepage/hero-bg.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <section className="relative pt-24 pb-12 w-full text-center" style={{ backgroundImage: 'url(/images/hero-bg.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
             {/* Dark overlay for text readability */}
             <div className="absolute inset-0 bg-[#0B2433]/40"></div>
             <div className="relative z-10 px-6 max-w-5xl mx-auto">
@@ -68,7 +68,7 @@ const HeroRolling = ({ scrollToForm }) => {
                 </div>
 
                 {/* Animated Headline */}
-                <h1 className="text-3xl md:text-5xl font-extrabold leading-[1.2] mb-6 text-white tracking-tight min-h-[200px] md:min-h-[160px]">
+                <h1 className="text-3xl md:text-5xl font-extrabold leading-[1.2] mb-1 md:mb-6 text-white tracking-tight min-h-[200px] md:min-h-[160px]">
                     {staticTextBase}
                     <br />
                     <span className="text-[#94BA5D] block mt-2 text-xl md:text-4xl md:whitespace-nowrap h-[3.5rem] md:h-auto flex items-center justify-center">
