@@ -72,18 +72,21 @@ const ComplianceLoop = () => {
                 ))}
             </div>
 
-            {/* Result Box */}
-            <div className="mt-10 relative z-10 bg-gradient-to-br from-[#0D4A63] to-[#0A384C] p-6 md:p-8 rounded-2xl border border-white/10 text-center shadow-2xl">
-                <h3 className="text-2xl font-bold text-white mb-4 font-montserrat">The result?</h3>
-                <p className="text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-                    IRS-ready documentation in 10 days, not 6 months. Up to <span className="font-bold text-[#94BA5D]">35%</span> more eligible costs captured. Hundreds of hours returned to innovation, not administration.
-                </p>
-
-                <div className="border-t border-white/10 pt-6">
-                    <p className="text-[#94BA5D] font-bold text-sm tracking-wide uppercase mb-2">This isn't theory</p>
-                    <p className="text-white text-sm">
-                        2,100+ European companies already use Clusterix. They stay an average 2.9 years with &lt;2% churn. Because continuous compliance actually works.
+            {/* Result Box - Styled to match "Our Way" card */}
+            <div className="mt-10 relative z-10 p-6 md:p-8 rounded-2xl text-center bg-white/10 border border-[#94BA5D]/50 backdrop-blur-md shadow-[0_0_30px_rgba(148,186,93,0.2)] overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-50 pointer-events-none"></div>
+                <div className="relative z-10">
+                    <h3 className="text-2xl font-bold text-white mb-4 font-montserrat">The result?</h3>
+                    <p className="text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
+                        IRS-ready documentation in 10 days, not 6 months. Up to <span className="font-bold text-[#94BA5D]">35%</span> more eligible costs captured. Hundreds of hours returned to innovation, not administration.
                     </p>
+
+                    <div className="border-t border-white/10 pt-6">
+                        <p className="text-[#94BA5D] font-bold text-sm tracking-wide uppercase mb-2">This isn't theory</p>
+                        <p className="text-white text-sm">
+                            2,100+ European companies already use Clusterix. They stay an average 2.9 years with &lt;2% churn. Because continuous compliance actually works.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>

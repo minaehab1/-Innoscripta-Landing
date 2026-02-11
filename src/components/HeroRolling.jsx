@@ -4,15 +4,15 @@ import SocialProof from './SocialProof';
 
 const HeroRolling = ({ scrollToForm }) => {
     // Static part of the headline
-    const staticTextBase = "Recover The Six Figures In R&D Credits You're Leaving On The Table";
+    const staticTextBase = "Recover the six figures in R&D credits you're leaving on the table";
 
     // Dynamic parts to cycle through
     const dynamicPhrases = [
-        "...Without Pulling Engineers Into Meetings.",
-        "...With Zero Upfront Cost.",
-        "...Built Automatically From Your Jira Tickets.",
-        "...Verified With German-Grade Rigor",
-        "...Or You Pay Nothing."
+        "...without pulling engineers into meetings.",
+        "...with zero upfront cost.",
+        "...built automatically from your Jira tickets.",
+        "...verified with German-grade rigor",
+        "...or you pay nothing."
     ];
 
     const [displayText, setDisplayText] = useState('');
@@ -71,7 +71,7 @@ const HeroRolling = ({ scrollToForm }) => {
                 <h1 className="text-3xl md:text-5xl font-extrabold leading-[1.2] mb-1 md:mb-6 text-white tracking-tight min-h-[200px] md:min-h-[160px]">
                     {staticTextBase}
                     <br />
-                    <span className="text-[#94BA5D] block mt-2 text-xl md:text-4xl md:whitespace-nowrap h-[3.5rem] md:h-auto flex items-center justify-center">
+                    <span className="text-[#94BA5D] block mt-2 text-xl md:text-5xl md:whitespace-nowrap h-[3.5rem] md:h-auto flex items-center justify-center">
                         <span className="text-center">
                             {displayText}
                             <span className="animate-pulse ml-1">|</span>
@@ -89,9 +89,7 @@ const HeroRolling = ({ scrollToForm }) => {
 
                 {/* CTA Stack - More Compact - Same as Lander.jsx */}
                 <div className="flex flex-col items-center">
-                    <div className="text-center mb-2">
-                        <p className="text-[#94BA5D] uppercase text-[9px] font-semibold tracking-widest">limited spots available</p>
-                    </div>
+                    {/* Limited spots moved to SocialProof */}
 
                     <SocialProof cta={
                         <a href="#apply-form" onClick={scrollToForm} className="flex justify-center items-center w-full bg-warning-green hover:bg-[#8AB860] text-white px-8 py-4 text-lg font-black tracking-wide shadow-[0_0_20px_rgba(148,186,93,0.3)] hover:shadow-[0_0_30px_rgba(148,186,93,0.5)] transition-all rounded-[6.25rem] md:w-full uppercase">

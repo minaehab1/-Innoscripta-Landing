@@ -14,8 +14,7 @@ const ClusterixComparison = () => {
 
             <div className="grid md:grid-cols-2 gap-8">
                 {/* Competitor's Approach */}
-                <div className="bg-[#0B2433] border border-red-500/20 rounded-2xl p-8 relative overflow-hidden group hover:border-red-500/40 transition-colors">
-                    <div className="absolute inset-0 bg-red-500/5 group-hover:bg-red-500/10 transition-colors z-0"></div>
+                <div className="h-full p-8 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-red-500/30 group relative overflow-hidden">
                     <div className="relative z-10">
                         <div className="text-center mb-8">
                             <h3 className="text-2xl font-bold text-white mb-2">Competitor's approach</h3>
@@ -45,7 +44,7 @@ const ClusterixComparison = () => {
                                 <span>Pay <span className="font-bold text-white">25%</span> of whatever you get</span>
                             </div>
 
-                            <div className="mt-8 bg-red-900/20 p-4 rounded-xl text-center border border-red-500/20">
+                            <div className="mt-8 bg-white/5 p-4 rounded-xl text-center border border-white/10">
                                 <p className="text-white text-sm mb-1">You charge $2,000 =</p>
                                 <p className="text-red-500 font-bold text-xl uppercase">$50/hour</p>
                             </div>
@@ -53,9 +52,9 @@ const ClusterixComparison = () => {
                     </div>
                 </div>
 
-                {/* Our Way */}
-                <div className="bg-[#0B2433] border border-[#349E67]/20 rounded-2xl p-8 relative overflow-hidden group hover:border-[#349E67]/40 transition-colors">
-                    <div className="absolute inset-0 bg-[#349E67]/5 group-hover:bg-[#349E67]/10 transition-colors z-0"></div>
+                {/* Our Way - Lighter BG + Shine Effect */}
+                <div className="h-full p-8 bg-white/10 border border-[#94BA5D]/50 rounded-2xl backdrop-blur-md shadow-[0_0_30px_rgba(148,186,93,0.2)] hover:bg-white/15 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_60px_rgba(148,186,93,0.4)] group relative overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-50 pointer-events-none"></div>
                     <div className="relative z-10">
                         <div className="text-center mb-8">
                             <h3 className="text-3xl font-bold text-white mb-2">Our Way</h3>
@@ -77,8 +76,8 @@ const ClusterixComparison = () => {
                                 </div>
                             ))}
 
-                            <div className="mt-8 bg-[#349E67]/20 p-4 rounded-xl text-center border border-[#349E67]/20">
-                                <p className="text-[#56FF77] font-bold text-lg uppercase mb-1">No upfront costs</p>
+                            <div className="mt-8 bg-white/5 p-4 rounded-xl text-center border border-white/10">
+                                <p className="text-[#94BA5D] font-bold text-lg uppercase mb-1">No upfront costs</p>
                                 <p className="text-white/70 text-sm">for using the platform</p>
                             </div>
                         </div>

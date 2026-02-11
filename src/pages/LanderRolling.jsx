@@ -47,11 +47,16 @@ const LanderRolling = () => {
             {/* Trusted By - Dark Theme & Marquee */}
             <TrustBar theme="dark" />
 
-            {/* Typeform Section */}
-            <section className="py-20 px-6 bg-[#0B2433]">
-                <div className="relative max-w-xl mx-auto bg-white rounded-xl overflow-hidden shadow-2xl h-[750px]">
-                    <div id="apply-form" className="absolute top-[50px] invisible"></div>
-                    <div data-tf-live="01KGST86NXFXZBFR1PG48K1TG8" style={{ height: '100%', width: '100%' }}></div>
+            {/* Typeform Embed Section */}
+            <section id="apply-form" className="w-full relative z-10 py-12" style={{ background: 'linear-gradient(to bottom, transparent, #375266 15%, #375266 85%, transparent)' }}>
+                <div className="max-w-4xl mx-auto px-4 relative flex justify-center">
+                    {/* Scroll Target Anchor - Offset for valid sticky header */}
+                    <div className="absolute -top-[50px] left-0 w-full h-px opacity-0 pointer-events-none" id="apply-form-target"></div>
+
+                    {/* Restored White Card Container */}
+                    <div className="relative max-w-xl w-full bg-white rounded-xl overflow-hidden shadow-2xl h-[750px]">
+                        <div data-tf-live="01KGST86NXFXZBFR1PG48K1TG8" style={{ height: '100%', width: '100%' }}></div>
+                    </div>
                 </div>
             </section>
 

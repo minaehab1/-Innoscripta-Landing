@@ -20,9 +20,9 @@ const SocialProof = ({ cta }) => {
                 {cta && <div className="w-full shadow-2xl rounded-[6.25rem]">{cta}</div>}
 
                 {/* Trust Text */}
-                <div className="flex flex-col items-center gap-1.5">
-                    <p className="text-white text-xs font-mono font-medium tracking-wide">
-                        Trusted By <span className="font-bold text-white">2100+</span> Founders
+                <div className="flex flex-col items-center gap-1.5 mt-2">
+                    <p className="text-gray-400 text-[10px] md:text-xs font-sans font-medium tracking-wide flex items-center gap-2 whitespace-nowrap">
+                        Limited spots available <span className="text-gray-500 px-2">✦</span> Trusted By 2100+ Founders
                     </p>
                 </div>
             </div>
