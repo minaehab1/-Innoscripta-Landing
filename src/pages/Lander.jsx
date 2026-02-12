@@ -22,7 +22,7 @@ const Lander = () => {
 
     const scrollToForm = (e) => {
         if (e) e.preventDefault();
-        const element = document.getElementById('apply-form');
+        const element = document.getElementById('apply-form-target');
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
         }
@@ -80,7 +80,7 @@ const Lander = () => {
                         {/* Limited spots moved to SocialProof */}
 
                         <SocialProof cta={
-                            <a href="#apply-form" onClick={scrollToForm} className="flex justify-center items-center w-full bg-warning-green hover:bg-[#8AB860] text-white px-8 py-4 text-lg font-black tracking-wide shadow-[0_0_20px_rgba(148,186,93,0.3)] hover:shadow-[0_0_30px_rgba(148,186,93,0.5)] transition-all rounded-[6.25rem] md:w-full uppercase">
+                            <a href="#apply-form-target" onClick={scrollToForm} className="flex justify-center items-center w-full bg-warning-green hover:bg-[#8AB860] text-white px-8 py-4 text-lg font-black tracking-wide shadow-[0_0_20px_rgba(148,186,93,0.3)] hover:shadow-[0_0_30px_rgba(148,186,93,0.5)] transition-all rounded-[6.25rem] md:w-full uppercase">
                                 GET STARTED
                             </a>
                         } />
@@ -95,7 +95,7 @@ const Lander = () => {
             <section id="apply-form" className="w-full relative z-10 py-12" style={{ background: 'linear-gradient(to bottom, transparent, #0D4A63 15%, #0D4A63 85%, transparent)' }}>
                 <div className="max-w-4xl mx-auto px-4 relative flex justify-center">
                     {/* Scroll Target Anchor - Offset for valid sticky header */}
-                    <div className="absolute -top-[50px] left-0 w-full h-px opacity-0 pointer-events-none" id="apply-form-target"></div>
+                    <div className="absolute top-[20px] left-0 w-full h-px opacity-0 pointer-events-none" id="apply-form-target"></div>
 
                     {/* Restored White Card Container */}
                     <div className="relative max-w-xl w-full bg-white rounded-xl overflow-hidden shadow-2xl h-[750px]">

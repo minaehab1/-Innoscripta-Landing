@@ -92,7 +92,7 @@ const HeroRolling = ({ scrollToForm }) => {
                     {/* Limited spots moved to SocialProof */}
 
                     <SocialProof cta={
-                        <a href="#apply-form" onClick={scrollToForm} className="flex justify-center items-center w-full bg-warning-green hover:bg-[#8AB860] text-white px-8 py-4 text-lg font-black tracking-wide shadow-[0_0_20px_rgba(148,186,93,0.3)] hover:shadow-[0_0_30px_rgba(148,186,93,0.5)] transition-all rounded-[6.25rem] md:w-full uppercase">
+                        <a href="#apply-form-target" onClick={scrollToForm} className="flex justify-center items-center w-full bg-warning-green hover:bg-[#8AB860] text-white px-8 py-4 text-lg font-black tracking-wide shadow-[0_0_20px_rgba(148,186,93,0.3)] hover:shadow-[0_0_30px_rgba(148,186,93,0.5)] transition-all rounded-[6.25rem] md:w-full uppercase">
                             GET STARTED
                         </a>
                     } />
