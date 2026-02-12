@@ -37,10 +37,10 @@ const ComplianceLoop = () => {
     return (
         <section className="py-24 px-6 max-w-7xl mx-auto">
             <div className="text-center mb-20 space-y-6">
-                <h2 className="text-4xl md:text-5xl font-bold font-raleway text-white">
+                <h2 className="text-4xl md:text-5xl font-bold text-white">
                     The Compliance Loop That Changes Everything
                 </h2>
-                <p className="text-white/80 text-xl max-w-3xl mx-auto font-open-sans">
+                <p className="text-white/80 text-xl max-w-3xl mx-auto">
                     What if R&D documentation happened BY DEFAULT as your teams worked not as a year-end burden?
                 </p>
             </div>
@@ -63,7 +63,7 @@ const ComplianceLoop = () => {
 
                                 {/* Text */}
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-3 font-montserrat tracking-tight group-hover:text-[#94BA5D] transition-colors">{step.title}</h3>
+                                    <h3 className="text-xl font-bold text-white mb-3 tracking-tight group-hover:text-[#94BA5D] transition-colors">{step.title}</h3>
                                     <p className="text-white text-sm leading-relaxed">{step.description}</p>
                                 </div>
                             </div>
@@ -76,7 +76,7 @@ const ComplianceLoop = () => {
             <div className="mt-10 relative z-10 p-6 md:p-8 rounded-2xl text-center bg-white/10 border border-[#94BA5D]/50 backdrop-blur-md shadow-[0_0_30px_rgba(148,186,93,0.2)] overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-50 pointer-events-none"></div>
                 <div className="relative z-10">
-                    <h3 className="text-2xl font-bold text-white mb-4 font-montserrat">The result?</h3>
+                    <h3 className="text-2xl font-bold text-white mb-4">The result?</h3>
                     <p className="text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
                         IRS-ready documentation in 10 days, not 6 months. Up to <span className="font-bold text-[#94BA5D]">35%</span> more eligible costs captured. Hundreds of hours returned to innovation, not administration.
                     </p>

@@ -13,7 +13,7 @@ const IRSCompliance = () => {
                 <div className="grid md:grid-cols-2 gap-16 items-center">
                     {/* Left: Text Content */}
                     <div>
-                        <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 font-plus-jakarta leading-tight">
+                        <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">
                             The joy of complete IRS compliance starts here
                         </h2>
 

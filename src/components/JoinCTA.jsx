@@ -92,7 +92,7 @@ const JoinCTA = () => {
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-plus-jakarta">
+                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                         Join 2,100+ companies<br className="hidden md:block" /> that scaled faster using our system
                     </h2>
                     <p className="text-lg text-white max-w-3xl mx-auto">
