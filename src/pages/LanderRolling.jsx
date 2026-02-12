@@ -51,7 +51,7 @@ const LanderRolling = () => {
             <section id="apply-form" className="w-full relative z-10 py-12" style={{ background: 'linear-gradient(to bottom, transparent, #0D4A63 15%, #0D4A63 85%, transparent)' }}>
                 <div className="max-w-4xl mx-auto px-4 relative flex justify-center">
                     {/* Scroll Target Anchor - Offset for valid sticky header */}
-                    <div className="absolute top-[20px] left-0 w-full h-px opacity-0 pointer-events-none" id="apply-form-target"></div>
+                    <div className="absolute top-[40px] left-0 w-full h-px opacity-0 pointer-events-none" id="apply-form-target"></div>
 
                     {/* Restored White Card Container */}
                     <div className="relative max-w-xl w-full bg-white rounded-xl overflow-hidden shadow-2xl h-[750px]">
