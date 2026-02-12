@@ -61,7 +61,7 @@ const IRSCompliance = () => {
                                 />
                                 {/* Play button overlay */}
                                 <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-all">
-                                    <div className="w-20 h-20 rounded-full bg-[#4AB8CC] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
+                                    <div className="w-20 h-20 rounded-full bg-[#2B98C4] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
                                         <svg
                                             className="w-10 h-10 text-white ml-1"
                                             fill="currentColor"

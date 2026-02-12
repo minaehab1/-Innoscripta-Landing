@@ -93,7 +93,7 @@ const JoinCTA = () => {
                 {/* Header */}
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-plus-jakarta">
-                        Join 2,100+ companies that scaled faster using our system
+                        Join 2,100+ companies<br className="hidden md:block" /> that scaled faster using our system
                     </h2>
                     <p className="text-lg text-white max-w-3xl mx-auto">
                         innoscripta brings all your R&D data, people, costs, and documentation together so you can file your R&D credits confidently, automatically, and without audit stress.
@@ -132,13 +132,13 @@ const JoinCTA = () => {
                             <div
                                 key={index}
                                 className={`p-6 rounded-xl border transition-all duration-500 cursor-pointer ${activeCard === index
-                                    ? 'bg-[#4AB8CC] border-[#4AB8CC] shadow-lg'
+                                    ? 'bg-[#2B98C4] border-[#2B98C4] shadow-lg'
                                     : 'bg-[#0A384C] border-white/10 hover:border-white/20 hover:scale-[1.01] hover:brightness-105'
                                     }`}
                                 onClick={() => handleCardClick(index)}
                             >
                                 <div className="flex items-start gap-4">
-                                    <div className={`shrink-0 transition-colors ${activeCard === index ? 'text-white' : 'text-[#4AB8CC]'}`}>
+                                    <div className={`shrink-0 transition-colors ${activeCard === index ? 'text-white' : 'text-[#2B98C4]'}`}>
                                         {feature.icon}
                                     </div>
                                     <div className="flex-1">
