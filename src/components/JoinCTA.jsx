@@ -52,7 +52,7 @@ const JoinCTA = () => {
         return () => clearInterval(interval);
     }, [features.length]);
 
-    // Use Intersection Observer to play video when visible (bypasses browser power-saving)
+    // Lazy-load video: only download and play when scrolled into view
     useEffect(() => {
         const video = videoRef.current;
         if (!video) return;
@@ -61,12 +61,13 @@ const JoinCTA = () => {
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        video.play().catch((error) => {
-                            console.log('Video play attempt:', error.message);
-                            // Fallback: try again after a short delay
-                            setTimeout(() => {
-                                video.play().catch(() => { });
-                            }, 1000);
+                        // Set src lazily — only download when visible
+                        if (!video.src || video.src === window.location.href) {
+                            video.src = '/videos/dashboard-demo.mp4';
+                            video.load();
+                        }
+                        video.play().catch(() => {
+                            setTimeout(() => video.play().catch(() => { }), 1000);
                         });
                     } else {
                         video.pause();
@@ -78,9 +79,7 @@ const JoinCTA = () => {
 
         observer.observe(video);
 
-        return () => {
-            observer.disconnect();
-        };
+        return () => observer.disconnect();
     }, []);
 
     const handleCardClick = (index) => {
@@ -106,23 +105,12 @@ const JoinCTA = () => {
                     <div className="relative rounded-3xl overflow-hidden border-8 border-white/20 bg-white/10 shadow-2xl backdrop-blur-sm aspect-video">
                         <video
                             ref={videoRef}
-                            autoPlay
                             loop
                             muted
                             playsInline
-                            preload="auto"
+                            preload="none"
                             className="w-full h-full object-cover"
-                            onError={(e) => {
-                                console.error('Video error:', e);
-                                console.error('Video element:', videoRef.current);
-                            }}
-                            onLoadedData={() => console.log('Video loaded successfully')}
-                            onCanPlay={() => console.log('Video can play')}
                         >
-                            <source src="/videos/dashboard-demo.mp4" type="video/mp4" />
-                            <div className="w-full h-full flex items-center justify-center text-white">
-                                Video not supported
-                            </div>
                         </video>
                     </div>
 
