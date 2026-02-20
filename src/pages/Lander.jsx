@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Button from '../components/Button';
 import TrustBar from '../components/TrustBar';
 import ClusterixComparison from '../components/ClusterixComparison';
@@ -9,16 +9,6 @@ import JoinCTA from '../components/JoinCTA';
 import IRSCompliance from '../components/IRSCompliance';
 
 const Lander = () => {
-    useEffect(() => {
-        const script = document.createElement("script");
-        script.src = "//embed.typeform.com/next/embed.js";
-        script.async = true;
-        document.body.appendChild(script);
-
-        return () => {
-            document.body.removeChild(script);
-        };
-    }, []);
 
     const scrollToForm = (e) => {
         if (e) e.preventDefault();
