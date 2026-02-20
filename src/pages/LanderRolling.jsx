@@ -10,16 +10,14 @@ import IRSCompliance from '../components/IRSCompliance';
 import HeroRolling from '../components/HeroRolling';
 
 const LanderRolling = () => {
+    // Typeform script is loaded eagerly in index.html.
+    // After React renders, we tell the SDK to re-scan the DOM for data-tf-live divs.
     useEffect(() => {
-        const script = document.createElement("script");
-        script.src = "//embed.typeform.com/next/embed.js";
-        script.async = true;
-        document.body.appendChild(script);
-
-        return () => {
-            document.body.removeChild(script);
-        };
+        if (window.tf) {
+            window.tf.load();
+        }
     }, []);
+
 
     const scrollToForm = (e) => {
         if (e) e.preventDefault();

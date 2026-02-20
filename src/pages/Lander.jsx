@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Button from '../components/Button';
 import TrustBar from '../components/TrustBar';
 import ClusterixComparison from '../components/ClusterixComparison';
@@ -9,6 +9,13 @@ import JoinCTA from '../components/JoinCTA';
 import IRSCompliance from '../components/IRSCompliance';
 
 const Lander = () => {
+    // Typeform script is loaded eagerly in index.html.
+    // After React renders, we tell the SDK to re-scan the DOM for data-tf-live divs.
+    useEffect(() => {
+        if (window.tf) {
+            window.tf.load();
+        }
+    }, []);
 
     const scrollToForm = (e) => {
         if (e) e.preventDefault();
