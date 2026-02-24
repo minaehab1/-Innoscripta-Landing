@@ -9,13 +9,7 @@ import JoinCTA from '../components/JoinCTA';
 import IRSCompliance from '../components/IRSCompliance';
 
 const Lander = () => {
-    // Typeform script is loaded eagerly in index.html.
-    // After React renders, we tell the SDK to re-scan the DOM for data-tf-live divs.
-    useEffect(() => {
-        if (window.tf) {
-            window.tf.load();
-        }
-    }, []);
+
 
     const scrollToForm = (e) => {
         if (e) e.preventDefault();
@@ -96,7 +90,7 @@ const Lander = () => {
 
                     {/* Restored White Card Container */}
                     <div className="relative max-w-xl w-full bg-white rounded-xl overflow-hidden shadow-2xl h-[750px]">
-                        <div data-tf-live="01KGST86NXFXZBFR1PG48K1TG8" style={{ height: '100%', width: '100%' }}></div>
+                        <iframe src="https://appointly.innoscripta.com/embed/rizo-ardolic-termin-mit-rizo-ardolic" style={{ height: '100%', width: '100%', border: 'none' }} title="Booking Form"></iframe>
                     </div>
                 </div>
             </section>
