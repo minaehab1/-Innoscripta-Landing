@@ -46,7 +46,7 @@ const LanderRolling = () => {
                     <div className="absolute top-[100px] left-0 w-full h-px opacity-0 pointer-events-none" id="apply-form-target"></div>
 
                     {/* Restored White Card Container */}
-                    <div className="relative max-w-xl w-full bg-white rounded-xl overflow-hidden shadow-2xl h-[1150px]">
+                    <div className="relative max-w-xl w-full bg-white rounded-xl overflow-hidden shadow-2xl h-[950px]">
                         <iframe src="https://appointly.innoscripta.com/embed/rizo-ardolic-termin-mit-rizo-ardolic" style={{ height: '100%', width: '100%', border: 'none' }} title="Booking Form"></iframe>
                     </div>
                 </div>
