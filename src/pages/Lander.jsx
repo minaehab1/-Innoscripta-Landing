@@ -82,14 +82,14 @@ const Lander = () => {
             {/* Trusted By - Dark Theme & Marquee */}
             <TrustBar theme="dark" />
 
-            {/* Typeform Embed Section */}
-            <section id="apply-form" className="w-full relative z-10 py-12" style={{ background: 'linear-gradient(to bottom, transparent, #0D4A63 15%, #0D4A63 85%, transparent)' }}>
+            {/* Appointly Booking Section */}
+            <section id="apply-form" className="w-full relative z-10 py-24" style={{ background: 'linear-gradient(to bottom, transparent, #0D4A63 15%, #0D4A63 85%, transparent)' }}>
                 <div className="max-w-4xl mx-auto px-4 relative flex justify-center">
                     {/* Scroll Target Anchor - Offset for valid sticky header */}
                     <div className="absolute top-[100px] left-0 w-full h-px opacity-0 pointer-events-none" id="apply-form-target"></div>
 
                     {/* Restored White Card Container */}
-                    <div className="relative max-w-xl w-full bg-white rounded-xl overflow-hidden shadow-2xl h-[750px]">
+                    <div className="relative max-w-xl w-full bg-white rounded-xl overflow-hidden shadow-2xl h-[1150px]">
                         <iframe src="https://appointly.innoscripta.com/embed/rizo-ardolic-termin-mit-rizo-ardolic" style={{ height: '100%', width: '100%', border: 'none' }} title="Booking Form"></iframe>
                     </div>
                 </div>
