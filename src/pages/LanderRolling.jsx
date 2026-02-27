@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Button from '../components/Button';
 import TrustBar from '../components/TrustBar';
 import ClusterixComparison from '../components/ClusterixComparison';
@@ -10,8 +10,13 @@ import IRSCompliance from '../components/IRSCompliance';
 import HeroRolling from '../components/HeroRolling';
 
 const LanderRolling = () => {
-
-
+    // Typeform script is loaded eagerly in index.html.
+    // After React renders, tell the SDK to re-scan the DOM for data-tf-live divs.
+    useEffect(() => {
+        if (window.tf) {
+            window.tf.load();
+        }
+    }, []);
 
     const scrollToForm = (e) => {
         if (e) e.preventDefault();
@@ -39,15 +44,15 @@ const LanderRolling = () => {
             {/* Trusted By - Dark Theme & Marquee */}
             <TrustBar theme="dark" />
 
-            {/* Appointly Booking Section */}
-            <section id="apply-form" className="w-full relative z-10 py-24" style={{ background: 'linear-gradient(to bottom, transparent, #0D4A63 15%, #0D4A63 85%, transparent)' }}>
+            {/* Typeform Embed Section */}
+            <section id="apply-form" className="w-full relative z-10 py-12" style={{ background: 'linear-gradient(to bottom, transparent, #0D4A63 15%, #0D4A63 85%, transparent)' }}>
                 <div className="max-w-4xl mx-auto px-4 relative flex justify-center">
                     {/* Scroll Target Anchor - Offset for valid sticky header */}
                     <div className="absolute top-[100px] left-0 w-full h-px opacity-0 pointer-events-none" id="apply-form-target"></div>
 
-                    {/* Restored White Card Container */}
-                    <div className="relative max-w-xl w-full bg-white rounded-xl overflow-hidden shadow-2xl h-[950px]">
-                        <iframe src="https://appointly.innoscripta.com/embed/rizo-ardolic-termin-mit-rizo-ardolic" style={{ height: '100%', width: '100%', border: 'none' }} title="Booking Form"></iframe>
+                    {/* White Card Container */}
+                    <div className="relative max-w-xl w-full bg-white rounded-xl overflow-hidden shadow-2xl h-[750px]">
+                        <div data-tf-live="01KGST86NXFXZBFR1PG48K1TG8" style={{ height: '100%', width: '100%' }}></div>
                     </div>
                 </div>
             </section>
